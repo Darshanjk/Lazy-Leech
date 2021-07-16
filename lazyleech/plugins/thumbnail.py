@@ -20,7 +20,7 @@ from pyrogram import Client, filters
 from .. import ALL_CHATS, help_dict
 from ..utils.misc import convert_to_jpg, get_file_mimetype, watermark_photo
 
-@Client.on_message(filters.command(['thumbnail', 'savethumbnail', 'setthumbnail']) & filters.chat(ALL_CHATS))
+@Client.on_message(filters.command(['thumbnail', 'savethumbnail@Nkl_tortoolkit_02_bot', 'setthumbnail@Nkl_tortoolkit_02_bot']) & filters.chat(ALL_CHATS))
 async def savethumbnail(client, message):
     reply = message.reply_to_message
     document = message.document
@@ -57,7 +57,7 @@ async def savethumbnail(client, message):
     else:
         await message.reply_text('Cannot find thumbnail')
 
-@Client.on_message(filters.command(['clearthumbnail', 'rmthumbnail', 'delthumbnail', 'removethumbnail', 'deletethumbnail']) & filters.chat(ALL_CHATS))
+@Client.on_message(filters.command(['clearthumbnail@Nkl_tortoolkit_02_bot', 'rmthumbnail@Nkl_tortoolkit_02_bot', 'delthumbnail@Nkl_tortoolkit_02_bot', 'removethumbnail@Nkl_tortoolkit_02_bot', 'deletethumbnail@Nkl_tortoolkit_02_bot']) & filters.chat(ALL_CHATS))
 async def rmthumbnail(client, message):
     for path in ('thumbnail', 'watermarked_thumbnail'):
         path = os.path.join(str(message.from_user.id), f'{path}.jpg')
