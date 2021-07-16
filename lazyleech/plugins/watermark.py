@@ -20,7 +20,7 @@ from pyrogram import Client, filters
 from .. import ALL_CHATS, help_dict
 from ..utils.misc import get_file_mimetype, watermark_photo
 
-@Client.on_message(filters.command(['watermark', 'savewatermark', 'setwatermark']) & filters.chat(ALL_CHATS))
+@Client.on_message(filters.command(['watermark@Nkl_tortoolkit_02_bot', 'savewatermark@Nkl_tortoolkit_02_bot', 'setwatermark@Nkl_tortoolkit_02_bot']) & filters.chat(ALL_CHATS))
 async def savewatermark(client, message):
     reply = message.reply_to_message
     document = message.document
@@ -67,7 +67,7 @@ async def savewatermark(client, message):
     else:
         await message.reply_text('Cannot find watermark')
 
-@Client.on_message(filters.command(['clearwatermark', 'rmwatermark', 'delwatermark', 'removewatermark', 'deletewatermark']) & filters.chat(ALL_CHATS))
+@Client.on_message(filters.command(['clearwatermark@Nkl_tortoolkit_02_bot', 'rmwatermark@Nkl_tortoolkit_02_bot', 'delwatermark@Nkl_tortoolkit_02_bot', 'removewatermark@Nkl_tortoolkit_02_bot', 'deletewatermark@Nkl_tortoolkit_02_bot']) & filters.chat(ALL_CHATS))
 async def rmwatermark(client, message):
     for path in ('watermark', 'watermarked_thumbnail'):
         path = os.path.join(str(message.from_user.id), f'{path}.jpg')
@@ -75,7 +75,7 @@ async def rmwatermark(client, message):
             os.remove(path)
     await message.reply_text('Watermark cleared')
 
-@Client.on_message(filters.command('testwatermark') & filters.chat(ALL_CHATS))
+@Client.on_message(filters.command('testwatermark@Nkl_tortoolkit_02_bot') & filters.chat(ALL_CHATS))
 async def testwatermark(client, message):
     watermark = os.path.join(str(message.from_user.id), 'watermark.jpg')
     if not os.path.isfile(watermark):
