@@ -353,40 +353,40 @@ async def cancel_leech(client, message):
     await aria2_remove(session, gid)
 
 help_dict['leech'] = ('Leech',
-'''/torrent <i>&lt;Torrent URL or File&gt;</i>
-/torrent <i>(as reply to a Torrent URL or file)</i>
+'''/torrent@Nkl_tortoolkit_02_bot <i>&lt;Torrent URL or File&gt;</i>
+/torrent@Nkl_tortoolkit_02_bot <i>(as reply to a Torrent URL or file)</i>
 
-/ziptorrent <i>&lt;Torrent URL or File&gt;</i>
-/ziptorrent <i>(as reply to a Torrent URL or File)</i>
+/ziptorrent@Nkl_tortoolkit_02_bot <i>&lt;Torrent URL or File&gt;</i>
+/ziptorrent@Nkl_tortoolkit_02_bot <i>(as reply to a Torrent URL or File)</i>
 
-/filetorrent <i>&lt;Torrent URL or File&gt;</i> - Sends videos as files
-/filetorrent <i>(as reply to a Torrent URL or File)</i> - Sends videos as files
+/filetorrent@Nkl_tortoolkit_02_bot <i>&lt;Torrent URL or File&gt;</i> - Sends videos as files
+/filetorrent@Nkl_tortoolkit_02_bot <i>(as reply to a Torrent URL or File)</i> - Sends videos as files
 
-/magnet <i>&lt;Magnet URL&gt;</i>
-/magnet <i>(as reply to a Magnet URL)</i>
+/magnet@Nkl_tortoolkit_02_bot <i>&lt;Magnet URL&gt;</i>
+/magnet@Nkl_tortoolkit_02_bot <i>(as reply to a Magnet URL)</i>
 
-/zipmagnet <i>&lt;Magnet URL&gt;</i>
-/zipmagnet <i>(as reply to a Magnet URL)</i>
+/zipmagnet@Nkl_tortoolkit_02_bot <i>&lt;Magnet URL&gt;</i>
+/zipmagnet@Nkl_tortoolkit_02_bot <i>(as reply to a Magnet URL)</i>
 
-/filemagnet <i>&lt;Magnet URL&gt;</i> - Sends videos as files
-/filemagnet <i>(as reply to a Magnet URL)</i> - Sends videos as files
+/filemagnet@Nkl_tortoolkit_02_bot <i>&lt;Magnet URL&gt;</i> - Sends videos as files
+/filemagnet@Nkl_tortoolkit_02_bot <i>(as reply to a Magnet URL)</i> - Sends videos as files
 
-/directdl <i>&lt;Direct URL&gt; | optional custom file name</i>
-/directdl <i>(as reply to a Direct URL) | optional custom file name</i>
-/direct <i>&lt;Direct URL&gt; | optional custom file name</i>
-/direct <i>(as reply to a Direct URL) | optional custom file name</i>
+/directdl@Nkl_tortoolkit_02_bot <i>&lt;Direct URL&gt; | optional custom file name</i>
+/directdl@Nkl_tortoolkit_02_bot <i>(as reply to a Direct URL) | optional custom file name</i>
+/direct@Nkl_tortoolkit_02_bot <i>&lt;Direct URL&gt; | optional custom file name</i>
+/direct@Nkl_tortoolkit_02_bot <i>(as reply to a Direct URL) | optional custom file name</i>
 
-/zipdirectdl <i>&lt;Direct URL&gt; | optional custom file name</i>
-/zipdirectdl <i>(as reply to a Direct URL) | optional custom file name</i>
-/zipdirect <i>&lt;Direct URL&gt; | optional custom file name</i>
-/zipdirect <i>(as reply to a Direct URL) | optional custom file name</i>
+/zipdirectdl@Nkl_tortoolkit_02_bot <i>&lt;Direct URL&gt; | optional custom file name</i>
+/zipdirectdl@Nkl_tortoolkit_02_bot <i>(as reply to a Direct URL) | optional custom file name</i>
+/zipdirect@Nkl_tortoolkit_02_bot <i>&lt;Direct URL&gt; | optional custom file name</i>
+/zipdirect@Nkl_tortoolkit_02_bot <i>(as reply to a Direct URL) | optional custom file name</i>
 
-/filedirectdl <i>&lt;Direct URL&gt; | optional custom file name</i> - Sends videos as files
-/filedirectdl <i>(as reply to a Direct URL) | optional custom file name</i> - Sends videos as files
-/filedirect <i>&lt;Direct URL&gt; | optional custom file name</i> - Sends videos as files
-/filedirect <i>(as reply to a Direct URL) | optional custom file name</i> - Sends videos as files
+/filedirectdl@Nkl_tortoolkit_02_bot <i>&lt;Direct URL&gt; | optional custom file name</i> - Sends videos as files
+/filedirectdl@Nkl_tortoolkit_02_bot <i>(as reply to a Direct URL) | optional custom file name</i> - Sends videos as files
+/filedirect@Nkl_tortoolkit_02_bot <i>&lt;Direct URL&gt; | optional custom file name</i> - Sends videos as files
+/filedirect@Nkl_tortoolkit_02_bot <i>(as reply to a Direct URL) | optional custom file name</i> - Sends videos as files
 
-/cancel <i>&lt;GID&gt;</i>
-/cancel <i>(as reply to status message)</i>
+/cancel@Nkl_tortoolkit_02_bot <i>&lt;GID&gt;</i>
+/cancel@Nkl_tortoolkit_02_bot <i>(as reply to status message)</i>
 
-/list - Lists all current leeches''')
+/list@Nkl_tortoolkit_02_bot - Lists all current leeches''')
