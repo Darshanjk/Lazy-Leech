@@ -68,14 +68,14 @@ async def torrent_cmd(client, message):
                         link = reply.text or reply.caption
     if not link:
         await message.reply_text('''Usage:
-- /torrent <i>&lt;Torrent URL or File&gt;</i>
-- /torrent <i>(as reply to a Torrent URL or file)</i>
+- /torrent@Nkl_tortoolkit_02_bot <i>&lt;Torrent URL or File&gt;</i>
+- /torrent@Nkl_tortoolkit_02_bot <i>(as reply to a Torrent URL or file)</i>
 
-- /ziptorrent <i>&lt;Torrent URL or File&gt;</i>
-- /ziptorrent <i>(as reply to a Torrent URL or File)</i>
+- /ziptorrent@Nkl_tortoolkit_02_bot <i>&lt;Torrent URL or File&gt;</i>
+- /ziptorrent@Nkl_tortoolkit_02_bot <i>(as reply to a Torrent URL or File)</i>
 
-- /filetorrent <i>&lt;Torrent URL or File&gt;</i> - Sends videos as files
-- /filetorrent <i>(as reply to a Torrent URL or file)</i> - Sends videos as files''')
+- /filetorrent@Nkl_tortoolkit_02_bot <i>&lt;Torrent URL or File&gt;</i> - Sends videos as files
+- /filetorrent@Nkl_tortoolkit_02_bot <i>(as reply to a Torrent URL or file)</i> - Sends videos as files''')
         return
     await initiate_torrent(client, message, link, flags)
     await message.stop_propagation()
